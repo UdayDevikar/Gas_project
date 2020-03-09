@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <title>{% block title %} home {% endblock %}</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'gasApp/css/about.css' %}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+</head>
+
+
+
+<body>
+
+	<nav class='navbar  navbar-expand-md navbar-dark bg-dark'>
+		<a href='#' class='navbar-brand text-warning font-weight-bold'>FEMTO GASLINK</a>
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarid'>
+			<span class='navbar-toggler-icon'>  </span>
+		</button>
+
+		<div class='collapse navbar-collapse' id='navbarid'>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item'>
+					<a href='{% url "home" %}' class='nav-link text-white'>HOME</a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "about" %}' class='nav-link text-white'>ABOUT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "services" %}' class='nav-link text-white'>PRODUCTS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<br> <br> <br> <br> 
+
+<div class='container'>
+	<div class='col-12 col-lg-8 col-md-6'>
+		<h2 class='about'> ABOUT US </h2><br><br>
+		<p class='text'>We at FEMTO GASLINK TECHNOLOGIES are engagedin the design, manufacturing of various industrial and laboratory instrumentslike Gas Regulator, Gas Chromatograph, Oxygen Analyzer, etc. We have developed automatic gas sampling valves, separation columns for GC applications andfilters etc. for various gas purification systems. We are specializedin the installation of high pure Stainless Steel gas pipelines forhigh precision Gas Analysers and Specialized Gas Laboratories.Our company is established by a group of professionals witha sole aim of providing high quality and customized solutions toits valuable customers which belong to the Chemical & GasIndustries, R&D Centers, and Higher Academic Institutions. Wehave unique specialization in carrying out the design,development, fabrication, testing, installation and maintenanceof various chemical and instrumentation systems and tailormade systems for the Gas Industry. We being Customer Oriented Manufacturing and Servicingorganization meets the customer needs as much as possible byworking closely with our clients, offering them comprehensive andsatisfying solutions at par with the best available and proventechnology. We are constantly striving to make improvements andprovide the most cost-efficient solutions to our customers. We have gota very strong and reliable network of imported and localsuppliers, vendors, skilled manpower and expertise in variousfields to execute diverse projects in time.<br><br>
+			Femto Gaslink Technologies<br>
+ 			Ground Floor, PAP-A303,<br> TTC Industrial Area Khairane, MIDC Industrial Area,<br>
+			Navi Mumbai-400709, Maharashtra, India
+		</p>
+	</div>
+</div>
+
+
+
+<br> <br> <br> <br> 
+
+
+
+
+
+	<div class='footer'>
+		<div class='footer-top'>
+			<div class='container'>
+				<div class='row  d-flex justify-content-center'>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40 segment-one'>
+						<h2 class='heading'> About Us </h2>
+						<p class='content'>FEMTO GASLINK TECHNOLOGIES<br> Suppliers & Vendors <br> Various Gas products  </p>
+					</div>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-two'>
+						<h2 class='heading'> OUR PRODUCTS  </h2>
+						<p class='content'>
+							Gas Regulator <br>
+							 Gas Chromatograph<br>
+							 Oxygen Analyzer<br>
+							 Tubling services <br>
+						</p>
+					</div>
+						<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-three'>
+							<h2 class='heading'> CONTACT US </h2>
+							<p class='content'> Ground Floor, <br>PAP-A303, TTC Khairane  <br> MIDC INDUSTRAIL AREA <br>NAVI MUMBAI  (400709) <br><br>
+							<b>Phone no<b>: Viju John <br>
+							<b>Email<b>: vijujohn@gmail.com<br></p>
+						    	<a href="#"> <i class="fa fa-facebook"></i></a>	
+								<a href="#"> <i class="fa fa-twitter"></i></a>
+								<a href="#"> <i class="fa fa-instagram"></i></a>
+								<a href="#"> <i class="fa fa-linkedin"></i></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class='footer-bottom-text'> All Rights reserved by &copy; Femto GasLink </p>
+	</div>
+
+
+</body>
+</html>

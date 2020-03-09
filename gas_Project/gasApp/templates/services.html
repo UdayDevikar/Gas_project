@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <title>{% block title %} home {% endblock %}</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'gasApp/css/services.css' %}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+</head>
+
+
+
+<body>
+
+	<nav class='navbar  navbar-expand-md navbar-dark bg-dark'>
+		<a href='#' class='navbar-brand text-warning font-weight-bold'>FEMTO GASLINK</a>
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarid'>
+			<span class='navbar-toggler-icon'>  </span>
+		</button>
+
+		<div class='collapse navbar-collapse' id='navbarid'>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item'>
+					<a href='{% url "home" %}' class='nav-link text-white'>HOME</a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "about" %}' class='nav-link text-white'>ABOUT </a>
+				</li>
+				<li class='nav-item'>
+					<a href='{% url "services" %}' class='nav-link text-white'>PRODUCTS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+	<div class='footer'>
+		<div class='footer-top'>
+			<div class='container'>
+				<div class='row  d-flex justify-content-center'>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40 segment-one'>
+						<h2 class='heading'> About Us </h2>
+						<p class='content'>FEMTO GASLINK TECHNOLOGIES<br> Suppliers & Vendors <br> Various Gas products  </p>
+					</div>
+					<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-two'>
+						<h2 class='heading'> OUR PRODUCTS  </h2>
+						<p class='content'>
+							Gas Regulator <br>
+							 Gas Chromatograph<br>
+							 Oxygen Analyzer<br>
+							 Tubling services <br>
+						</p>
+					</div>
+						<div class='col-lg-4 col-sm-6 col-xs-12 col-md-4 sm-mb-40  segment-three'>
+							<h2 class='heading'> CONTACT US </h2>
+							<p class='content'> Ground Floor, <br>PAP-A303, TTC Khairane  <br> MIDC INDUSTRAIL AREA <br>NAVI MUMBAI  (400709) <br><br>
+							<b>Phone no<b>: Viju John <br>
+							<b>Email<b>: vijujohn@gmail.com<br></p>
+						    	<a href="#"> <i class="fa fa-facebook"></i></a>	
+								<a href="#"> <i class="fa fa-twitter"></i></a>
+								<a href="#"> <i class="fa fa-instagram"></i></a>
+								<a href="#"> <i class="fa fa-linkedin"></i></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class='footer-bottom-text'> All Rights reserved by &copy; Femto GasLink </p>
+	</div>
+
+
+</body>
+</html>
